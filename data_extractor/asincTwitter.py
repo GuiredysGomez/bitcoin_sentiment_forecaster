@@ -9,9 +9,9 @@ import tracemalloc
 
 tracemalloc.start()
 
-MINIMUM_TWEETS = 1000
-QUERY = 'bitcoin (from:KuCoinUpdates) until:2025-05-10 since:2025-01-20'
-CSV_FILENAME = 'tweets.csv'
+MINIMUM_TWEETS = 10000
+QUERY = '(bitcoin OR BTC) (from:PeterMcCormack) until:2023-12-31 since:2023-01-01'
+CSV_FILENAME = 'tweets_ordenado.csv'
 
 async def main():
     """Función principal asíncrona para ejecutar el proceso."""

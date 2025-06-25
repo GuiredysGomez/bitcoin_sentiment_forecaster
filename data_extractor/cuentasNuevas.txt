@@ -1,0 +1,144 @@
+bitcoin (from:elonmusk) until:2025-04-10 since:2020-10-20  Total 28
+bitcoin (from:saylor) until:2025-04-10 since:2020-10-20 Total 97
+bitcoin (from:nic__carter) until:2025-04-10 since:2020-10-20 Total 96
+bitcoin (from:PeterMcCormack) until:2025-04-10 since:2020-10-20 Total 96
+bitcoin (from:APompliano) until:2025-04-10 since:2020-10-20 Total 93
+bitcoin (from:lopp) until:2025-04-10 since:2020-10-20 Total 89
+bitcoin (from:adam3us) until:2025-04-10 since:2020-10-20 Total 99
+bitcoin (from:roasbeef) until:2025-04-10 since:2020-10-20 Total 99
+bitcoin (from:elerianm) until:2025-04-10 since:2020-10-20 Total 99
+
+bitcoin (from:glassnode) until:2025-04-10 since:2020-10-20 Total 98
+bitcoin (from:woonomic ) until:2025-04-10 since:2020-10-20 Total 131
+bitcoin (from:Bitcoin_es) until:2025-04-10 since:2020-10-20 65
+
+bitcoin (from:DylanLeClair_) until:2025-04-10 since:2020-10-20
+
+bitcoin (from:NVK) until:2025-04-10 since:2020-10-20  17
+  
+bitcoin (from:JasonADeane) until:2025-04-10 since:2020-10-20  
+bitcoin (from:pwuille) until:2025-04-10 since:2020-10-20  
+bitcoin (from:BitcoinMagazine) until:2025-04-10 since:2020-10-20  2020 si
+bitcoin (from:CoinDesk) until:2025-04-10 since:2020-10-20  2020 si
+bitcoin (from:TheBitcoinPod) until:2025-04-10 since:2020-10-20  error
+bitcoin (from:BTC_Archive) until:2025-04-10 since:2020-10-20  
+bitcoin (from:MicroStrategy) until:2025-04-10 since:2020-10-20  1
+bitcoin (from:Block) until:2025-04-10 since:2020-10-20  no
+bitcoin (from:River) until:2025-04-10 since:2020-10-20  
+bitcoin (from:KrakenFX) until:2025-04-10 since:2020-10-20  
+bitcoin (from:CryptoHayes) until:2025-04-10 since:2020-10-20  
+bitcoin (from:Lookonchain) until:2025-04-10 since:2020-10-20  
+bitcoin (from:WillieClemente) until:2025-04-10 since:2020-10-20
+bitcoin (from:binance) until:2020-12-10 since:2020-01-20
+
+
+Nuevas
+bitcoin (from:aantonop) until:2025-04-10 since:2020-10-20
+bitcoin (from:danheld) until:2025-04-10 since:2020-10-20
+bitcoin (from:LynAldenContact) until:2025-04-10 since:2020-10-20
+bitcoin (from:PrestonPysh) until:2025-04-10 since:2020-10-20
+bitcoin (from:DocumentingBTC) until:2025-04-10 since:2020-10-20
+bitcoin (from:nansen_ai) until:2025-04-10 since:2020-10-20
+bitcoin (from:santimentfeed) until:2025-04-10 since:2020-10-20
+bitcoin (from:scottmelker) until:2025-04-10 since:2020-10-20
+bitcoin (from:ToneVays) until:2025-04-10 since:2020-10-20
+bitcoin (from:Pentosh1) until:2025-04-10 since:2020-10-20
+bitcoin (from:TheCryptoLark) until:2025-04-10 since:2020-10-20
+bitcoin (from:decryptmedia) until:2025-04-10 since:2020-10-20
+bitcoin (from:Blockworks_) until:2025-04-10 since:2020-10-20
+bitcoin (from:WatcherGuru) until:2025-04-10 since:2020-10-20
+bitcoin (from:coinbase) until:2025-04-10 since:2020-10-20
+bitcoin (from:Gemini) until:2025-04-10 since:2020-10-20
+bitcoin (from:Grayscale) until:2025-04-10 since:2020-10-20
+bitcoin (from:RaoulGMI) until:2025-04-10 since:2020-10-20
+bitcoin (from:CathieDWood) until:2025-04-10 since:2020-10-20
+bitcoin (from:cz_binance) until:2025-04-10 since:2020-10-20
+bitcoin (from:VitalikButerin) until:2025-04-10 since:2020-10-20
+bitcoin (from:novogratz) until:2025-04-10 since:2020-10-20
+bitcoin (from:balajis) until:2025-04-10 since:2020-10-20
+bitcoin (from:AriDavidPaul) until:2025-04-10 since:2020-10-20
+bitcoin (from:CaitlinLong_) until:2025-04-10 since:2020-10-20
+bitcoin (from:FidelityDigitalAssets) until:2025-04-10 since:2020-10-20
+bitcoin (from:BitMEXResearch) until:2025-04-10 since:2020-10-20
+bitcoin (from:TuurDemeester) until:2025-04-10 since:2020-10-20
+bitcoin (from:WillyWoo) until:2025-04-10 since:2020-10-20
+bitcoin (from:MartyBent) until:2025-04-10 since:2020-10-20
+bitcoin (from:MattWalshBlog) until:2025-04-10 since:2020-10-20
+bitcoin (from:gladstein) until:2025-04-10 since:2020-10-20
+bitcoin (from:ColeGarnerBTC) until:2025-04-10 since:2020-10-20
+bitcoin (from:jimmysong) until:2025-04-10 since:2020-10-20
+bitcoin (from:DeribitInsights) until:2025-04-10 since:2020-10-20
+bitcoin (from:TheBlock__) until:2025-04-10 since:2020-10-20
+bitcoin (from:BloombergCrypto) until:2025-04-10 since:2020-10-20
+bitcoin (from:Cointelegraph) until:2025-04-10 since:2020-10-20
+bitcoin (from:BitcoinParadigm) until:2025-04-10 since:2020-10-20
+bitcoin (from:Excellion) until:2025-04-10 since:2020-10-20
+bitcoin (from:TheStalwart) until:2025-04-10 since:2020-10-20
+bitcoin (from:RenMacPartners) until:2025-04-10 since:2020-10-20
+bitcoin (from:Permabullish) until:2025-04-10 since:2020-10-20
+bitcoin (from:Trezor) until:2025-04-10 since:2020-10-20
+bitcoin (from:Ledger) until:2025-04-10 since:2020-10-20
+bitcoin (from:ArcaneResearch) until:2025-04-10 since:2020-10-20
+bitcoin (from:MessariCrypto) until:2025-04-10 since:2020-10-20
+bitcoin (from:RyanSAdams) until:2025-04-10 since:2020-10-20
+bitcoin (from:gregzaj) until:2025-04-10 since:2020-10-20
+bitcoin (from:hasufl) until:2025-04-10 since:2020-10-20
+bitcoin (from:larryfink) until:2025-04-10 since:2020-10-20
+bitcoin (from:BlackRock) until:2025-04-10 since:2020-10-20
+bitcoin (from:ARKInvest) until:2025-04-10 since:2020-10-20
+bitcoin (from:digitalasset) until:2025-04-10 since:2020-10-20
+bitcoin (from:coinshares) until:2025-04-10 since:2020-10-20
+bitcoin (from:100trillionUSD) until:2025-04-10 since:2020-10-20
+bitcoin (from:APomplianoShows) until:2025-04-10 since:2020-10-20
+bitcoin (from:TheBitcoinConf) until:2025-04-10 since:2020-10-20
+bitcoin (from:BTCSessions) until:2025-04-10 since:2020-10-20
+bitcoin (from:PeterSchiff) until:2025-04-10 since:2020-10-20
+bitcoin (from:Nouriel) until:2025-04-10 since:2020-10-20
+bitcoin (from:Lynx_BTC) until:2025-04-10 since:2020-10-20
+bitcoin (from:MacroScope8) until:2025-04-10 since:2020-10-20
+bitcoin (from:marketsbyluna) until:2025-04-10 since:2020-10-20
+bitcoin (from:MacroAlf) until:2025-04-10 since:2020-10-20
+bitcoin (from:CaprioleInvest) until:2025-04-10 since:2020-10-20
+bitcoin (from:CryptoQuant_Pro) until:2025-04-10 since:2020-10-20
+bitcoin (from:Token_metrics) until:2025-04-10 since:2020-10-20
+bitcoin (from:DataDash) until:2025-04-10 since:2020-10-20
+bitcoin (from:RanNeuNer) until:2025-04-10 since:2020-10-20
+bitcoin (from:TheCryptoDog) until:2025-04-10 since:2020-10-20
+bitcoin (from:whalestats) until:2025-04-10 since:2020-10-20
+bitcoin (from:Crypto_Panic) until:2025-04-10 since:2020-10-20
+bitcoin (from:newsbtc) until:2025-04-10 since:2020-10-20
+bitcoin (from:UToday_en) until:2025-04-10 since:2020-10-20
+bitcoin (from:BTCTN) until:2025-04-10 since:2020-10-20
+bitcoin (from:Blockstream) until:2025-04-10 since:2020-10-20
+bitcoin (from:Blockdaemon) until:2025-04-10 since:2020-10-20
+bitcoin (from:CoinGecko) until:2025-04-10 since:2020-10-20
+bitcoin (from:CoinMarketCap) until:2025-04-10 since:2020-10-20
+bitcoin (from:Bybit_Official) until:2025-04-10 since:2020-10-20
+bitcoin (from:KuCoinUpdates) until:2025-04-10 since:2020-10-20
+bitcoin (from:eToro) until:2025-04-10 since:2020-10-20
+bitcoin (from:RobinhoodApp) until:2025-04-10 since:2020-10-20
+bitcoin (from:Bitfinex) until:2025-04-10 since:2020-10-20
+bitcoin (from:OKX) until:2025-04-10 since:2020-10-20
+bitcoin (from:FTX_Official) until:2025-04-10 since:2020-10-20
+bitcoin (from:BanklessHQ) until:2025-04-10 since:2020-10-20
+bitcoin (from:sassal0x) until:2025-04-10 since:2020-10-20
+bitcoin (from:ledgerstatus) until:2025-04-10 since:2020-10-20
+bitcoin (from:CryptoCobain) until:2025-04-10 since:2020-10-20
+bitcoin (from:DocumentingETH) until:2025-04-10 since:2020-10-20
+bitcoin (from:udiWertheimer) until:2025-04-10 since:2020-10-20
+bitcoin (from:naval) until:2025-04-10 since:2020-10-20
+bitcoin (from:P_H_C_S_E) until:2025-04-10 since:2020-10-20
+bitcoin (from:woolfonwallst) until:2025-04-10 since:2020-10-20
+bitcoin (from:TrustWallet) until:2025-04-10 since:2020-10-20
+bitcoin (from:MetaMask) until:2025-04-10 since:2020-10-20
+bitcoin (from:CirclePay) until:2025-04-10 since:2020-10-20
+bitcoin (from:Tether_to) until:2025-04-10 since:2020-10-20
+bitcoin (from:Ripple) until:2025-04-10 since:2020-10-20
+bitcoin (from:Cardano) until:2025-04-10 since:2020-10-20
+bitcoin (from:Solana) until:2025-04-10 since:2020-10-20
+bitcoin (from:Polkadot) until:2025-04-10 since:2020-10-20
+bitcoin (from:LitecoinProject) until:2025-04-10 since:2020-10-20
+bitcoin (from:dogecoin) until:2025-04-10 since:2020-10-20
+bitcoin (from:shibainucoin) until:2025-04-10 since:2020-10-20
+bitcoin (from:avax) until:2025-04-10 since:2020-10-20
+bitcoin (from:KuCoinUpdates) until:2025-05-10 since:2025-01-20
