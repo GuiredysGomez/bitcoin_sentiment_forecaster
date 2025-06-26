@@ -31,7 +31,7 @@ class SentimentAnalyzer:
         else: return 0
 
 # 🔹 Cargar CSV con tweets
-csv_path = "../data/tweets.csv"
+csv_path = "../data_extractor/tweets_ordenado.csv"
 df = pd.read_csv(csv_path)
 
 # 🔹 Procesar tweets con batch processing en GPU
@@ -39,7 +39,7 @@ analyzer = SentimentAnalyzer()
 df["Sentiment"] = analyzer.batch_analyze(df["Text"].tolist())  # 🔹 Se procesa por lotes
 
 # 🔹 Guardar resultados en un nuevo archivo
-df.to_csv("../data/tweets2_with_sentiment_cryptobert.csv", index=False)
+df.to_csv("../data/tweets_with_sentiment_cryptobert.csv", index=False)
 
 print("✅ Procesamiento completado con CryptoBERT en GPU. Datos guardados.")
 end_time = time.time()
