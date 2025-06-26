@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Parámetro: año que quieres analizar
-año_objetivo = 2025  # Cambia este valor si quieres otro año
+año_objetivo = 2024  # Cambia este valor si quieres otro año
 
 # Cargar el CSV
 df = pd.read_csv("tweets_ordenado.csv")
