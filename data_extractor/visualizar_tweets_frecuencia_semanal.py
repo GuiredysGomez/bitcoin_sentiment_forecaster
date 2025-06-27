@@ -16,12 +16,12 @@ df_filtrado = df[df['Created At'].dt.year == año_objetivo].copy()
 # Establecer la fecha como índice
 df_filtrado.set_index('Created At', inplace=True)
 
-# Agrupar cada 10 días y contar tweets
-tweets_10d = df_filtrado.resample('10D').size()
+# Agrupar cada 7 días y contar tweets
+tweets_10d = df_filtrado.resample('W').size()
 
 # Graficar
 tweets_10d.plot(kind='bar', figsize=(12, 6), color='darkorange')
-plt.title(f'Tweets cada 10 días en {año_objetivo}')
+plt.title(f'Tweets cada 7 días en {año_objetivo}')
 plt.xlabel('Fecha de inicio del intervalo')
 plt.ylabel('Número de tweets')
 plt.xticks(rotation=45)
