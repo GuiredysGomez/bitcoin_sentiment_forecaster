@@ -8,7 +8,7 @@ import tracemalloc
 
 tracemalloc.start()
 MINIMUM_TWEETS = 10000
-año_objetivo = 2025 # Año en que se realizará la busqueda
+año_objetivo = 2026 # Año en que se realizará la busqueda
 USER = 'woonomic' # usuario al que se realizará la busqueda
 CSV_FILENAME = 'tweets_ordenado.csv' # .csv donde se guardaran los tweets
 
