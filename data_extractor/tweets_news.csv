@@ -1,0 +1,89 @@
+Tweet_count,Username,Text,Created At,Retweets,Likes
+1,Michael Saylor,This year #Bitcoin empowered @MicroStrategy. 🚀 https://t.co/8DbXQwovI1,Sun Dec 31 13:44:36 +0000 2023,1180,8228
+2,Michael Saylor,Wishing you all a Happy New Year full of #Bitcoin &amp; Good Cheer.🧡,Sun Dec 31 20:44:27 +0000 2023,997,11250
+1,nic carter,"in 2024 we can stop writing ""in these uncertain times"" in emails. the times are certain now.",Sun Dec 31 18:08:31 +0000 2023,16,346
+1,Peter McCormack 🏴‍☠️🇬🇧🇮🇪,"2023 has been a crazy year for an idiot from Bedford:
+- Another 12.5m downloads of @WhatBitcoinDid, taking us to a lifetime of 44m downloads.
+- @realbedford we won a league and cup double in May, now our mens and ladies team are both top of their leagues.
+- Bought @auctionroombar",Sun Dec 31 19:06:11 +0000 2023,26,903
+2,Peter McCormack 🏴‍☠️🇬🇧🇮🇪,@missteencrypto Miss 20's #bitcoin,Sun Dec 31 19:15:31 +0000 2023,0,7
+3,Peter McCormack 🏴‍☠️🇬🇧🇮🇪,"@Michael52682075 @Cipherhoodlum @LHSummers So... millions of people own Bitcoin around the world, millions use it.
+
+Creating a fully decentralised money isn't easy, these things take time. The adoption rate is impressive and it works.
+
+Feel free to ignore it.",Sun Dec 31 16:28:59 +0000 2023,0,1
+1,Anthony Pompliano 🌪,@aprende_btc Solid goal,Sun Dec 31 20:55:36 +0000 2023,0,7
+2,Anthony Pompliano 🌪,"Interest rates rose at the fastest rate in history but assets took off this year:
+
+- Bitcoin: +154%
+- Nasdaq: +54%
+- S&amp;P: +24%
+- Home index: +7%
+
+Most of the predictions were wrong. Investing is hard. The future is unknowable.
+
+Good luck to everyone in 2024.",Sun Dec 31 01:32:37 +0000 2023,141,1231
+3,Anthony Pompliano 🌪,"@ChrisBloomstran Fair points (especially forward looking markets), but even w/ the 2 year timeframe I don’t think very many people thought SPY &amp; homes would be positive and BTC/QQQ only down single digits if interest rates were 5%+
+
+I didn’t think it either so just calling out investing is hard!",Sun Dec 31 03:05:54 +0000 2023,0,9
+1,Jameson Lopp,The @BitMEX insurance fund only grew by 0.3% (100 BTC) in 2023. It holds 0.19% of all BTC. https://t.co/j5UIYekiUM,Sun Dec 31 15:25:56 +0000 2023,2,22
+2,Jameson Lopp,Open interest in bitcoin perpetual and futures contracts  increased 75% during 2023 to $11.2 billion. https://t.co/lEAERyOv5O,Sun Dec 31 16:19:31 +0000 2023,6,24
+1,Adam Back,@BobMcElrath @TTrevethan @PeterMcCormack @Liquid_BTC you can't use client state for backups. seeds are better ergonomics. small blobs in a non-consensus area for a descriptor and a few paths is fine. people will otherwise store it on op_returns which uses up transaction space.,Sun Dec 31 04:53:00 +0000 2023,0,2
+2,Adam Back,"@BobMcElrath @TTrevethan @PeterMcCormack @Liquid_BTC By all means select or build wallet encrypted clouds, interoperable encrypted layer 2 state backups. For example greenlight @Core_LN has HA backups, and multiple power users backup strategies, you can also make cooperative best effort backups with peers, before LN-SYMMETRY.",Sun Dec 31 13:37:33 +0000 2023,0,1
+3,Adam Back,"@BobMcElrath @TTrevethan @PeterMcCormack @Liquid_BTC We should hold mainchain cold storage to a higher standard. That is designed for highest assurance long term storage. Layer2s are hotter, shorter-term and in some involve lots of client side state. That's not what I'm talking about, that's a layer2 backup risk tradeoff you take.",Sun Dec 31 13:34:50 +0000 2023,0,2
+4,Adam Back,"@BobMcElrath @TTrevethan @PeterMcCormack @Liquid_BTC It's not a ""nice dream"" it's the status quo for mainchain for 12 years since 2012 BIP 32, fixing the frequent back or risk losing funds of the original 100 address cache model. It's only the popularity of multisig with required xpubs, and custom miniscripts that finally broke it.",Sun Dec 31 13:29:25 +0000 2023,0,0
+5,Adam Back,"@BobMcElrath @TTrevethan @PeterMcCormack @Liquid_BTC Encoded descriptors are nice, but they are not as compact as seeds, not fixed size etc and so create a new backup risk. Also people add new multisigs and custom miniscripts subwallets over time. But descriptors are small and compact enough to write into a small blob store.",Sun Dec 31 13:31:26 +0000 2023,0,0
+6,Adam Back,"@BobMcElrath @TTrevethan @PeterMcCormack @Liquid_BTC No that would be inefficient. But protocols should be designed to be recoverable from a seed, plus minimal data to reduce the risk of funds loss. For example LN-SYMMETRY gets much closer to that.",Sun Dec 31 10:43:19 +0000 2023,0,0
+1,Olaoluwa Osuntokun,"several years in the making, I'm excited to announce the release of btcd v0.24: https://t.co/CXqVM6SW8J
+
+this release includes many bug fixes, important security fixes (update!), pruning support, and many optimizations reducing chain sync time from ~45 hours+ (days) to ~6 hours",Sun Dec 31 02:37:26 +0000 2023,45,222
+2,Olaoluwa Osuntokun,"@LarryBitcoin @nitesh_btc @JWWeatherman_ diffusion of knowledge, which itself is an important part of decentralization
+
+what's the bus factor in Bitcoin today? how many people could reimplement from scratch if needed? how many people active today still know of all the low level esoterica required to implement Bitcoin?",Sun Dec 31 18:17:31 +0000 2023,1,10
+3,Olaoluwa Osuntokun,"@benthecarman nah, the nuisance stuff uses tiny amt of bytes anyway, each week they make some nu variant, good luck paying wackamole
+
+for better or for worse, *this* is what permissionlessness is all about: any txn that conforms w/ consensus rules can be mined, it's Bitcoin's greatest strength",Sun Dec 31 18:40:36 +0000 2023,4,26
+4,Olaoluwa Osuntokun,"@benthecarman tbh it's disappointing how much time n energy people are devoting to this saga, rather than focusing on mo productive avenues like low hanging fruits to increase chain efficiency o scalability
+
+don't fight permissionlessness, or Bitcoin loses value, if JSON blobs scare u then idk",Sun Dec 31 18:43:38 +0000 2023,6,30
+5,Olaoluwa Osuntokun,"@LarryBitcoin @Suheb__ @JWWeatherman_ @nitesh_btc ofc don't disagree that diff impls can increase consensus risk, but not zero sum: each time a diff impl discovers an obscure consensus issue, the science+engineering of ze field moves forward 
+
+would u rather *not* increase our collective knowledge of the system we hold so dear?",Sun Dec 31 21:22:22 +0000 2023,1,4
+6,Olaoluwa Osuntokun,"@janhodl3 if you don't care about how Bitcoin works, or don't need to write special software that interacts with the network, or anything like that, then you should just run bitcoind, it's what the overwhelming economic super majority of the runs, so it's the safest",Sun Dec 31 20:14:13 +0000 2023,0,2
+7,Olaoluwa Osuntokun,"@LarryBitcoin @Suheb__ @JWWeatherman_ @nitesh_btc the person I would put in the top 5 of knowledge w.r.t Bitcoin consensus is also the only person in the world to my knowledge that's implemented Bitcoin in &gt; 2 languages
+
+as they say, you only really understand something if you can take it all apart then put it together again",Sun Dec 31 21:19:32 +0000 2023,0,2
+8,Olaoluwa Osuntokun,"@LarryBitcoin @Suheb__ @JWWeatherman_ @nitesh_btc could compare to ze capital expenditure (both human+monetary) that would be required to write something comparable to Google Chrome from scratch, prob hundreds of millies of $'s if not billies
+
+today no one in Bitcoin ecosystem takes challenge nor existential risk seriously tho",Sun Dec 31 23:08:21 +0000 2023,0,1
+9,Olaoluwa Osuntokun,"@LarryBitcoin @nitesh_btc @JWWeatherman_ the shared idea is what gives the software power, in the past we've seen the 2 concepts not always be in sync, but ultimately Bitcoin is the software w/ the highest fidelity manifestation of the idea
+
+eg: if an impl had an issue re 21 mil limit, it deviated from Bitcoin the idea",Sun Dec 31 18:25:20 +0000 2023,0,4
+10,Olaoluwa Osuntokun,"@LarryBitcoin @nitesh_btc @JWWeatherman_ I know we don't agree on this stuff, but that's ok
+
+If it weren't for btcd, or generally the ability for anyone to have an independent implementation themselves, I prob wouldn't have started working on Bitcoin way back when
+
+as we know Bitcoin the idea trumps Bitcoin the software",Sun Dec 31 18:20:39 +0000 2023,0,6
+11,Olaoluwa Osuntokun,"@LarryBitcoin @Suheb__ @JWWeatherman_ @nitesh_btc can we trust such invaluable knowledge (which is literally freedom, as it's required to create + validate BTC in ze first place), to a handful of ppl or even a single organization? 
+
+ofc nothing but respect to all devs, but nothing is infallible, orgs decay, knowledge forgotten",Sun Dec 31 21:24:51 +0000 2023,0,3
+12,Olaoluwa Osuntokun,"@LarryBitcoin @Suheb__ @JWWeatherman_ @nitesh_btc very reasonable stance, agree we aren't there today (efforts have moved beyond test vectors and into behavioral checks with boundary edge cases), but would rather be on the side of advancing our knowledge to seek the truth of what Bitcoin really is at the software level",Sun Dec 31 22:57:43 +0000 2023,0,0
+13,Olaoluwa Osuntokun,"@LarryBitcoin @Suheb__ @JWWeatherman_ @nitesh_btc for various reasons and path dependence, today bitcoind doesn't have credible competition, one could argue that this holds back bitcoin, as a single firm may not be properly delivering what the market demands due to lack of incentives
+
+or even just due to lack of imagination",Sun Dec 31 23:04:24 +0000 2023,0,0
+14,Olaoluwa Osuntokun,"@LarryBitcoin @Suheb__ @JWWeatherman_ @nitesh_btc it isn't a zero sum game, knowledge gained working on other implementations can itself contribute to _broader_ consensus level review, and also serves to ensure that tribal knowledge can be passed down and won't vanish as ppl cease contributing to the system",Sun Dec 31 21:18:27 +0000 2023,0,0
+15,Olaoluwa Osuntokun,"@LarryBitcoin @Suheb__ @JWWeatherman_ @nitesh_btc by and by, competition is what drives innovation, with the user base ultimately winning no matter the path
+
+today no single LN impl can just sit on its laurels as there're other impls with talented and driven individuals that collectively help to continue to push the boundaries",Sun Dec 31 23:00:49 +0000 2023,0,0
+16,Olaoluwa Osuntokun,"@LarryBitcoin @Suheb__ @JWWeatherman_ @nitesh_btc re risk, I view it as inverse abs nat log function, high risk w/ low capital investment, but which starts to teeter off over time
+
+rn we're still somewhat early in the curve, much mo work needed to move things to the right and down
+
+with that expenditure we all gain more freedom",Sun Dec 31 23:46:58 +0000 2023,0,0
+17,Olaoluwa Osuntokun,"@beeforbacon1 @benthecarman all the meme stuff rn is based on a dollar auction disguised as a ""fair mint"", ppl pay N-1 BTC in a txn (fees) to have the potential to flip for N BTC
+
+for those playing w/o house money at this stage, it presents a dream to get in early and potentially cash out big",Sun Dec 31 20:00:25 +0000 2023,0,1
+1,Mohamed A. El-Erian,"From Bloomberg on the latest set of activity data out of China:
+“The PMI figures provided more signs of weakness in China’s economic recovery in the final months of the year. They are also likely to add pressure on fiscal and monetary policymakers to act urgently, after leaders https://t.co/uYkAsXb8Jb",Sun Dec 31 05:44:55 +0000 2023,86,276
+1,Willy Woo,"@LukeMikic21 You really need to breakdown the miners balances. 1.746m BTC are attributed to Satoshi (1.1m) and early miners who lost their keys. All other active miners hold less than 80,000 BTC.",Sun Dec 31 04:38:13 +0000 2023,2,46
+2,Willy Woo,"@boomer_btc @LukeMikic21 No, it’s looking at the mined coins on the network. Mainly they are attributed to mining pools.",Sun Dec 31 05:49:27 +0000 2023,0,5
