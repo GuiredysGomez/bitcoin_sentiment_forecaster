@@ -1,0 +1,14 @@
+[
+  {
+    "params": {
+      "learning_rate": 0.13537033248173344,
+      "num_leaves": 64,
+      "max_depth": 4,
+      "feature_fraction": 0.7559289078996488,
+      "bagging_fraction": 0.7331629719452519,
+      "bagging_freq": 8,
+      "min_data_in_leaf": 25
+    },
+    "value": 0.5
+  }
+]

@@ -7,19 +7,18 @@ bitcoin (from:lopp) until:2025-04-10 since:2020-10-20 Total 89
 bitcoin (from:adam3us) until:2025-04-10 since:2020-10-20 Total 99
 bitcoin (from:roasbeef) until:2025-04-10 since:2020-10-20 Total 99
 bitcoin (from:elerianm) until:2025-04-10 since:2020-10-20 Total 99
-
 bitcoin (from:glassnode) until:2025-04-10 since:2020-10-20 Total 98
 bitcoin (from:woonomic ) until:2025-04-10 since:2020-10-20 Total 131
 bitcoin (from:Bitcoin_es) until:2025-04-10 since:2020-10-20 65
-
 bitcoin (from:DylanLeClair_) until:2025-04-10 since:2020-10-20
-
 bitcoin (from:NVK) until:2025-04-10 since:2020-10-20  17
-  
 bitcoin (from:JasonADeane) until:2025-04-10 since:2020-10-20  
 bitcoin (from:pwuille) until:2025-04-10 since:2020-10-20  
 bitcoin (from:BitcoinMagazine) until:2025-04-10 since:2020-10-20  2020 si
 bitcoin (from:CoinDesk) until:2025-04-10 since:2020-10-20  2020 si
+HASTA AQUI 2020
+
+
 bitcoin (from:TheBitcoinPod) until:2025-04-10 since:2020-10-20  error
 bitcoin (from:BTC_Archive) until:2025-04-10 since:2020-10-20  
 bitcoin (from:MicroStrategy) until:2025-04-10 since:2020-10-20  1

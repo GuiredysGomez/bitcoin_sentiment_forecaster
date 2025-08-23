@@ -1,0 +1,13 @@
+[
+  {
+    "params": {
+      "n_estimators": 324,
+      "learning_rate": 0.029233637937789516,
+      "max_depth": 4,
+      "subsample": 0.6813368996054391,
+      "min_samples_split": 10,
+      "min_samples_leaf": 9
+    },
+    "value": 0.32558139534883723
+  }
+]

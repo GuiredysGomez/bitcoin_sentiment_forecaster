@@ -1,0 +1,30 @@
+[
+  {
+    "params": {
+      "learning_rate": 1.00984195139193e-05,
+      "n_l1": 192,
+      "n_l2": 128,
+      "n_l3": 80,
+      "n_l4": 32,
+      "dropout_rate": 0.01560157455885968,
+      "activation": "selu",
+      "optimizer": "rmsprop",
+      "batch_size": 256
+    },
+    "value": 0.5777777777777777
+  },
+  {
+    "params": {
+      "learning_rate": 1.00984195139193e-05,
+      "n_l1": 192,
+      "n_l2": 128,
+      "n_l3": 80,
+      "n_l4": 32,
+      "dropout_rate": 0.01560157455885968,
+      "activation": "selu",
+      "optimizer": "rmsprop",
+      "batch_size": 256
+    },
+    "value": 0.5777777777777777
+  }
+]

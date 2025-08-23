@@ -1,2 +1,0 @@
-run,val_loss,val_accuracy,val_f1_macro,epochs,learning_rate,n_l1,n_l2,n_l3,n_l4,n_l5
-1,18.671754837036133,0.807692289352417,0.6121333779413405,41,0.001,100,60,30,10,

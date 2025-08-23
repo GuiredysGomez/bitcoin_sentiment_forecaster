@@ -1,0 +1,13 @@
+[
+  {
+    "params": {
+      "learning_rate": 0.11852258842059535,
+      "max_depth": 4,
+      "max_iter": 443,
+      "min_samples_leaf": 10,
+      "l2_regularization": 1.4427582668352443,
+      "max_bins": 182
+    },
+    "value": 0.3404255319148936
+  }
+]
