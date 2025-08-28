@@ -1,30 +1,30 @@
 [
   {
     "params": {
-      "learning_rate": 1.00984195139193e-05,
-      "n_l1": 192,
-      "n_l2": 128,
-      "n_l3": 80,
-      "n_l4": 32,
-      "dropout_rate": 0.01560157455885968,
-      "activation": "selu",
-      "optimizer": "rmsprop",
-      "batch_size": 256
+      "learning_rate": 5.038299029060178e-05,
+      "n_l1": 224,
+      "n_l2": 32,
+      "n_l3": 112,
+      "n_l4": 64,
+      "dropout_rate": 0.025097897226378094,
+      "activation": "tanh",
+      "optimizer": "adam",
+      "batch_size": 64
     },
-    "value": 0.5777777777777777
+    "value": 0.43010752688172044
   },
   {
     "params": {
-      "learning_rate": 1.00984195139193e-05,
-      "n_l1": 192,
-      "n_l2": 128,
-      "n_l3": 80,
-      "n_l4": 32,
-      "dropout_rate": 0.01560157455885968,
-      "activation": "selu",
-      "optimizer": "rmsprop",
-      "batch_size": 256
+      "learning_rate": 5.038299029060178e-05,
+      "n_l1": 224,
+      "n_l2": 32,
+      "n_l3": 112,
+      "n_l4": 64,
+      "dropout_rate": 0.025097897226378094,
+      "activation": "tanh",
+      "optimizer": "adam",
+      "batch_size": 64
     },
-    "value": 0.5777777777777777
+    "value": 0.43010752688172044
   }
 ]

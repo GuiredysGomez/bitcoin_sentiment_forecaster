@@ -1,14 +1,26 @@
 [
   {
     "params": {
-      "learning_rate": 0.13537033248173344,
-      "num_leaves": 64,
-      "max_depth": 4,
-      "feature_fraction": 0.7559289078996488,
-      "bagging_fraction": 0.7331629719452519,
+      "learning_rate": 0.16080058075197093,
+      "num_leaves": 52,
+      "max_depth": 3,
+      "feature_fraction": 0.7551032572036344,
+      "bagging_fraction": 0.912287213632062,
       "bagging_freq": 8,
-      "min_data_in_leaf": 25
+      "min_data_in_leaf": 65
     },
-    "value": 0.5
+    "value": 0.5373134328358209
+  },
+  {
+    "params": {
+      "learning_rate": 0.16080058075197093,
+      "num_leaves": 52,
+      "max_depth": 3,
+      "feature_fraction": 0.7551032572036344,
+      "bagging_fraction": 0.912287213632062,
+      "bagging_freq": 8,
+      "min_data_in_leaf": 65
+    },
+    "value": 0.5373134328358209
   }
 ]

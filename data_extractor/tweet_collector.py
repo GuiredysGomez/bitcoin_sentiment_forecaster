@@ -9,18 +9,17 @@ import tracemalloc
 tracemalloc.start()
 MINIMUM_TWEETS = 1000
 año_objetivo = 2020 # Año en que se realizará la busqueda
-
-USER = 'elonmusk' # usuario al que se realizará la busqueda
+USER = 'lopp' # usuario al que se realizará la busqueda
 CSV_FILENAME = 'new_tweets.csv' # .csv donde se guardaran los nuevos tweets
 
 # Rango trimestral
 RANGOS = [
     (f"{año_objetivo}-01-01", f"{año_objetivo}-03-01"),
-    (f"{año_objetivo}-03-02", f"{año_objetivo}-05-01"),
-    (f"{año_objetivo}-05-02", f"{año_objetivo}-07-01"),
-    (f"{año_objetivo}-07-02", f"{año_objetivo}-09-01"),
-    (f"{año_objetivo}-09-02", f"{año_objetivo}-11-01"),
-    (f"{año_objetivo}-11-02", f"{año_objetivo}-12-31"),
+    (f"{año_objetivo}-03-01", f"{año_objetivo}-05-01"),
+    (f"{año_objetivo}-05-01", f"{año_objetivo}-07-01"),
+    (f"{año_objetivo}-07-01", f"{año_objetivo}-09-01"),
+    (f"{año_objetivo}-09-01", f"{año_objetivo}-11-01"),
+    (f"{año_objetivo}-11-01", f"{año_objetivo+1}-01-01"),
 ]
 
 async def recolectar_tweets(desde, hasta, writer, tweet_start_count):
