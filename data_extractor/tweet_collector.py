@@ -10,7 +10,7 @@ tracemalloc.start()
 MINIMUM_TWEETS = 1000
 año_objetivo = 2020 # Año en que se realizará la busqueda
 USER = 'lopp' # usuario al que se realizará la busqueda
-CSV_FILENAME = 'new_tweets.csv' # .csv donde se guardaran los nuevos tweets
+CSV_FILENAME = 'raw_tweets.csv' # .csv donde se guardaran los nuevos tweets
 
 # Rango trimestral
 RANGOS = [

@@ -37,7 +37,7 @@ class SentimentAnalyzer:
         else: return 0
 
 # 🔹 Cargar CSV con tweets
-csv_path = "../data_extractor/new_tweets.csv"
+csv_path = "../data_extractor/raw_tweets.csv"
 df = pd.read_csv(csv_path)
 
 # 🔹 Procesar tweets con batch processing en GPU
