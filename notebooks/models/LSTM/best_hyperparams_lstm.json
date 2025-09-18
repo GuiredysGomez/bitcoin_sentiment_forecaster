@@ -2,15 +2,15 @@
   {
     "params": {
       "lstm_layers": 1,
-      "units1": 192,
-      "dense_units": 192,
+      "units1": 256,
+      "dense_units": 96,
       "dense_activation": "tanh",
-      "dropout": 0.0003689957437176851,
-      "learning_rate": 2.2225431000607906e-05,
-      "optimizer": "adam",
-      "batch_size": 32,
-      "patience": 6
+      "dropout": 0.1940706426424474,
+      "learning_rate": 5.154826380808717e-06,
+      "optimizer": "rmsprop",
+      "batch_size": 64,
+      "patience": 8
     },
-    "value": 0.36363636363636365
+    "value": 0.3854166666666667
   }
 ]

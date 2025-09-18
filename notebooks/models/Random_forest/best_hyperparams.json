@@ -1,22 +1,12 @@
 [
   {
     "params": {
-      "n_estimators": 313,
-      "max_depth": 16,
-      "min_samples_split": 5,
-      "min_samples_leaf": 3,
+      "n_estimators": 87,
+      "max_depth": 18,
+      "min_samples_split": 2,
+      "min_samples_leaf": 1,
       "max_features": "sqrt"
     },
-    "value": 0.4067796610169492
-  },
-  {
-    "params": {
-      "n_estimators": 313,
-      "max_depth": 16,
-      "min_samples_split": 5,
-      "min_samples_leaf": 3,
-      "max_features": "sqrt"
-    },
-    "value": 0.4067796610169492
+    "value": 0.45901639344262296
   }
 ]

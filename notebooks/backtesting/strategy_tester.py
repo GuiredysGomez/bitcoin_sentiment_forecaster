@@ -7,6 +7,11 @@ from sklearn.metrics import classification_report
 from collections import Counter
 import random
 from sklearn.model_selection import train_test_split
+# imports de modelos scikit/xgboost
+from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier, HistGradientBoostingClassifier
+from sklearn.svm import SVC
+from sklearn.linear_model import LogisticRegression
+from xgboost import XGBClassifier
 
 # Constante para definir la métrica de puntuación a extraer del reporte de clasificación.
 # Se usará para optimizar el modelo en Optuna.
@@ -219,7 +224,8 @@ class Backtesting:
 
         # Preparar el DataFrame para almacenar los resultados del backtest.
         backtest_df = self.test_set.copy()
-        backtest_df['signal'] = 0
+        backtest_df['signal'] = 0            # decisión tomada hoy para ejecutar mañana
+        # backtest_df['exec_signal'] = 0       # señal efectivamente ejecutada hoy
 
         # Identificar la columna de precios (referencia dia 0).
         price_col = [col for col in self.test_set.columns if 'open_d0' in col][-1]
@@ -231,6 +237,7 @@ class Backtesting:
         self.num_sells_executed = 0
         best_params_from_previous_step = None
         model = None
+        pending_signal = 0  # señal decidida ayer, se ejecuta hoy
 
         # INICIALIZACIÓN DE ESTRATEGIAS DE REFERENCIA ---
         # ----Parámetros para la estrategia Buy & Hold----
@@ -252,34 +259,40 @@ class Backtesting:
         self.dca_portfolio_values = []
 
         for i in tqdm(range(0, n_test), desc="Walk-Forward Backtesting"):
-            # 1. RE-OPTIMIZACIÓN Y RE-ENTRENAMIENTO DEL MODELO
+            # 0) Ejecutar hoy lo decidido ayer (evita look-ahead)
+            price = backtest_df.loc[i, price_col]
+            self._process_signal(pending_signal, price) # Check
+            # backtest_df.loc[i, 'exec_signal'] = pending_signal # SE PUEDE QUITAR POR LOS MOMENTOS, NO SE UTILIZA
+
+            # 1) Estrategias de referencia con el precio de hoy
+            self._update_reference_strategies(i, price) # Check
+
+            # 2) Actualizar el train con el ejemplo i-1 (su target ya es conocido)
+            if i > 0:
+                X_train_current, y_train_current_m = self._data_update(
+                    X_train_current, y_train_current_m,
+                    self.X_test[i-1:i], self.y_test_m[i-1:i]
+                ) # Check
+
+            # 3) Re-optimizar cuando toque (con el train ya actualizado)
             if  i % self.window_size == 0:
                 n_trials = self.optuna_trials_initial if i == 0 else self.optuna_trials
                 model, best_params = self._tuning_model(
                     X_train_current, y_train_current_m,
                     n_trials, best_params_from_previous_step
-                )
+                ) # Check (pero confiando que esta bien el training)
                 best_params_from_previous_step = best_params.copy()
 
-            # PREDICCIÓN Y PROCESAMIENTO DE SEÑAL
-            X_pred = self.X_test[i:i+1] # El método espera un array con la forma (n_samples, n_features)
+            # 4) Decidir la señal de mañana con los datos de hoy (no ejecutar hoy)
+            X_pred = self.X_test[i:i+1]
             y_prob = model.predict(X_pred, num_iteration=model.best_iteration)
             y_pred_mapped = np.argmax(y_prob, axis=1)
-            signal = self.inv_map[y_pred_mapped[0]]
-            backtest_df.loc[i, 'signal'] = signal
-            price = backtest_df.loc[i, price_col]
-            self._process_signal(signal, price)
-
-            # --- Lógica de las Estrategias de Referencia ---
-            self._update_reference_strategies(i, price)
-
-            # Actualización de datos
-            X_train_current, y_train_current_m = self._data_update(X_train_current, y_train_current_m,
-                                                                 self.X_test[i:i+1], self.y_test_m[i:i+1])
+            pending_signal = self.inv_map[y_pred_mapped[0]]
+            backtest_df.loc[i, 'signal'] = pending_signal
 
         # FINALIZACIÓN Y DEVOLUCIÓN DE RESULTADOS
         backtest_df['walk_forward_portfolio'] = self.portfolio_values
         backtest_df['buy_and_hold_portfolio'] = self.b_and_h_portfolio_values
         backtest_df['dca_portfolio'] = self.dca_portfolio_values
         
-        return (backtest_df)
+        return (backtest_df, X_train_current, y_train_current_m)

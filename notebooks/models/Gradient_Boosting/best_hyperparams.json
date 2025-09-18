@@ -1,24 +1,13 @@
 [
   {
     "params": {
-      "n_estimators": 324,
-      "learning_rate": 0.029233637937789516,
-      "max_depth": 4,
-      "subsample": 0.6813368996054391,
-      "min_samples_split": 10,
+      "n_estimators": 220,
+      "learning_rate": 0.1318034758692167,
+      "max_depth": 8,
+      "subsample": 0.9820559851782735,
+      "min_samples_split": 7,
       "min_samples_leaf": 9
     },
-    "value": 0.32558139534883723
-  },
-  {
-    "params": {
-      "n_estimators": 343,
-      "learning_rate": 0.06620879032719892,
-      "max_depth": 7,
-      "subsample": 0.9326966142193129,
-      "min_samples_split": 2,
-      "min_samples_leaf": 9
-    },
-    "value": 0.4057971014492754
+    "value": 0.5555555555555556
   }
 ]

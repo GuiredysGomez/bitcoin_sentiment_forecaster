@@ -1,35 +1,13 @@
 [
   {
     "params": {
-      "learning_rate": 0.014938912873467824,
-      "max_depth": 9,
-      "max_iter": 100,
-      "min_samples_leaf": 1,
-      "l2_regularization": 1.3285245359013458,
-      "max_bins": 189
+      "learning_rate": 0.1575206128209753,
+      "max_depth": 3,
+      "max_iter": 304,
+      "min_samples_leaf": 19,
+      "l2_regularization": 0.8279046766404491,
+      "max_bins": 128
     },
-    "value": 0.42857142857142855
-  },
-  {
-    "params": {
-      "learning_rate": 0.011262698411702979,
-      "max_depth": 14,
-      "max_iter": 132,
-      "min_samples_leaf": 1,
-      "l2_regularization": 1.7020702651692257,
-      "max_bins": 189
-    },
-    "value": 0.4444444444444444
-  },
-  {
-    "params": {
-      "learning_rate": 0.01118292023836174,
-      "max_depth": 13,
-      "max_iter": 157,
-      "min_samples_leaf": 1,
-      "l2_regularization": 1.6240267168954154,
-      "max_bins": 189
-    },
-    "value": 0.45714285714285713
+    "value": 0.624113475177305
   }
 ]

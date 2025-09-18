@@ -1,26 +1,26 @@
 [
   {
     "params": {
-      "learning_rate": 0.16080058075197093,
-      "num_leaves": 52,
+      "learning_rate": 0.11399002785666924,
+      "num_leaves": 75,
       "max_depth": 3,
-      "feature_fraction": 0.7551032572036344,
-      "bagging_fraction": 0.912287213632062,
-      "bagging_freq": 8,
-      "min_data_in_leaf": 65
+      "feature_fraction": 0.9262224100434759,
+      "bagging_fraction": 0.9308897359113296,
+      "bagging_freq": 10,
+      "min_data_in_leaf": 12
     },
-    "value": 0.5373134328358209
+    "value": 0.5942028985507246
   },
   {
     "params": {
-      "learning_rate": 0.16080058075197093,
-      "num_leaves": 52,
-      "max_depth": 3,
-      "feature_fraction": 0.7551032572036344,
-      "bagging_fraction": 0.912287213632062,
-      "bagging_freq": 8,
-      "min_data_in_leaf": 65
+      "learning_rate": 0.03457120366286536,
+      "num_leaves": 35,
+      "max_depth": 2,
+      "feature_fraction": 0.9577017858305965,
+      "bagging_fraction": 0.9563976601561844,
+      "bagging_freq": 9,
+      "min_data_in_leaf": 22
     },
-    "value": 0.5373134328358209
+    "value": 0.6119402985074627
   }
 ]
