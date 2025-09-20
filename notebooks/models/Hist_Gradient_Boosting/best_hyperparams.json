@@ -9,5 +9,16 @@
       "max_bins": 128
     },
     "value": 0.624113475177305
+  },
+  {
+    "params": {
+      "learning_rate": 0.02864037599938193,
+      "max_depth": 2,
+      "max_iter": 500,
+      "min_samples_leaf": 16,
+      "l2_regularization": 0.7531256262480733,
+      "max_bins": 177
+    },
+    "value": 0.5882352941176471
   }
 ]
