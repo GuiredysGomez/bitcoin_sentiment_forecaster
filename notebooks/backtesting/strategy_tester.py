@@ -117,6 +117,10 @@ class Backtesting:
         self.num_buys_executed = 0
         self.num_sells_executed = 0
 
+        # ---- Registro de Trades ----
+        self.trades = []
+        self.current_trade = {}
+
         # ---- Estado para la estrategia Buy & Hold ----
         self.b_and_h_position = 0.0
         self.b_and_h_portfolio_values = []
@@ -202,19 +206,37 @@ class Backtesting:
 
         return model, best_params
 
-    def _process_signal(self, signal, price):
+    def _process_signal(self, signal, price, index, date):
         """
         Procesa una señal de trading y actualiza el estado del portafolio.
         """
         if signal == 1 and self.cash > 0:  # Señal de COMPRA
-            self.position = self.cash / price
+            btc_bought = self.cash / price
+            self.position = btc_bought
             self.cash = 0.0
             self.num_buys_executed += 1
+            # Iniciar el registro de la nueva operación
+            self.current_trade = {
+                'fecha_compra': date,
+                'indice_compra': index,
+                'precio_compra': price,
+                'cantidad_BTC_comprado': btc_bought
+            }
         elif signal == -1 and self.position > 0:  # Señal de VENTA
+            btc_sold = self.position
             self.cash = self.position * price
             self.position = 0.0
             self.num_sells_executed += 1
-        
+            # Completar y guardar la operación
+            if self.current_trade:
+                self.current_trade.update({
+                    'fecha_venta': date,
+                    'indice_venta': index,
+                    'precio_venta': price,
+                    'cantidad_BTC_vendido': btc_sold
+                })
+                self.trades.append(self.current_trade)
+                self.current_trade = {} # Resetear para la próxima operación
         # Calcular y registrar el valor del portafolio al final del día.
         self.portfolio_values.append(self.cash + self.position * price)
 
@@ -391,6 +413,50 @@ class Backtesting:
         
         return self.pending_signal
 
+    def _finalize_backtest(self, backtest_df):
+        """
+        Finaliza el backtest: liquida posiciones abiertas, crea el DataFrame de trades
+        y ensambla el DataFrame final de resultados.
+        """
+        # --- LIQUIDACIÓN FINAL ---
+        # Al final del último día, si todavía hay una posición abierta, se vende.
+        if self.position > 0:
+            final_price = backtest_df.loc[self.n_test - 1, self.price_col]
+            final_date = backtest_df.loc[self.n_test - 1, 'date']
+            print(f"\nLiquidando posición final de {self.position:.6f} BTC al precio de ${final_price:,.2f} en {final_date.date()}")
+            
+            # Actualizar el estado del portafolio
+            self.cash = self.position * final_price
+            btc_sold = self.position
+            self.position = 0.0
+            self.num_sells_executed += 1
+            # Actualizar el valor del portafolio para el último día
+            self.portfolio_values[-1] = self.cash
+
+            # Completar el último trade si estaba abierto
+            if self.current_trade and 'fecha_compra' in self.current_trade:
+                self.current_trade.update({
+                    'fecha_venta': final_date,
+                    'indice_venta': self.n_test - 1,
+                    'precio_venta': final_price,
+                    'cantidad_BTC_vendido': btc_sold
+                })
+                self.trades.append(self.current_trade)
+                self.current_trade = {}
+
+        # --- CREACIÓN DE DATAFRAMES FINALES ---
+        # Crear el DataFrame de trades
+        trades_df = pd.DataFrame(self.trades)
+        if not trades_df.empty:
+            trades_df['valor_portafolio_en_venta'] = trades_df['cantidad_BTC_vendido'] * trades_df['precio_venta']
+
+        # Ensamblar el DataFrame de resultados del backtest
+        backtest_df['walk_forward_portfolio'] = self.portfolio_values
+        backtest_df['buy_and_hold_portfolio'] = self.b_and_h_portfolio_values
+        backtest_df['dca_portfolio'] = self.dca_portfolio_values
+
+        return backtest_df, trades_df
+    
     def run(self):
         """
         Ejecuta el proceso completo de backtesting con Walk-Forward Optimization.
@@ -405,7 +471,8 @@ class Backtesting:
         for i in tqdm(range(0, self.n_test), desc="Walk-Forward Backtesting"):
             # 0) Ejecutar hoy lo decidido ayer (evita look-ahead)
             price = backtest_df.loc[i, self.price_col]
-            self._process_signal(self.pending_signal, price) # Check
+            date = backtest_df.loc[i, 'date']
+            self._process_signal(self.pending_signal, price, i, date) # Check
 
             # 1) Estrategias de referencia con el precio de hoy
             self._update_reference_strategies(i, price) # Check
@@ -434,9 +501,7 @@ class Backtesting:
             model_name_lower = self.model_name.lower()    
             backtest_df.loc[i, 'signal'] = self._prediction(model_name_lower, X_pred)
 
-        # FINALIZACIÓN Y DEVOLUCIÓN DE RESULTADOS
-        backtest_df['walk_forward_portfolio'] = self.portfolio_values
-        backtest_df['buy_and_hold_portfolio'] = self.b_and_h_portfolio_values
-        backtest_df['dca_portfolio'] = self.dca_portfolio_values
+        # --- FINALIZACIÓN Y DEVOLUCIÓN DE RESULTADOS ---
+        backtest_df, trades_df = self._finalize_backtest(backtest_df)
 
-        return (backtest_df, self.X_train_current, self.y_train_current_m)
+        return (backtest_df, trades_df)
