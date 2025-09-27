@@ -36,16 +36,16 @@ class SentimentAnalyzer:
         elif "Bearish" in response["label"]: return -1
         else: return 0
 
-# 🔹 Cargar CSV con tweets
-csv_path = "../data_extractor/raw_tweets.csv"
+# 🔹 Cargar CSV con posts
+csv_path = "../data/pre_cleaning/raw_posts.csv"
 df = pd.read_csv(csv_path)
 
-# 🔹 Procesar tweets con batch processing en GPU
+# 🔹 Procesar posts con batch processing en GPU
 analyzer = SentimentAnalyzer()
 df["Sentiment"] = analyzer.batch_analyze(df["Text"].tolist())  # 🔹 Se procesa por lotes
 
 # 🔹 Guardar resultados en un nuevo archivo
-df.to_csv("../data/pre_cleaning/tweets_news_with_sentiment_cryptobert.csv", index=False)
+df.to_csv("../data/pre_cleaning/posts_news_with_sentiment_cryptobert.csv", index=False)
 
 print("✅ Processing completed with CryptoBERT on GPU. Data saved.")
 end_time = time.time()
