@@ -1,0 +1,15 @@
+Comparison,Metric,Observed Difference,P-value (Bootstrap),95% CI Lower,95% CI Upper,Is Significant,Conclusion
+Walk-Forward vs. Buy & Hold,Total Return,0.029170921258782512,0.518,-1.1898951599311927,0.8373931620768087,False,No hay evidencia estadística suficiente para afirmar una diferencia significativa.
+Walk-Forward vs. Buy & Hold,CAGR,0.041367322191619316,0.518,-1.809975358721938,1.2360729914435944,False,No hay evidencia estadística suficiente para afirmar una diferencia significativa.
+Walk-Forward vs. Buy & Hold,Annualized Vol,-0.1332825436831026,0.0,-0.1948669767881354,-0.08038342035514767,True,La diferencia es estadísticamente significativa y a favor de Walk-Forward (menor es mejor).
+Walk-Forward vs. Buy & Hold,Max Drawdown,0.03770003670209887,0.878,-0.045758496060786705,0.23113510324313513,False,No hay evidencia estadística suficiente para afirmar una diferencia significativa.
+Walk-Forward vs. Buy & Hold,Sharpe Ratio,0.5159166789470646,0.252,-0.8991697509935996,1.8824879636926208,False,No hay evidencia estadística suficiente para afirmar una diferencia significativa.
+Walk-Forward vs. Buy & Hold,Sortino Ratio,0.23549475938610742,0.426,-2.085894989910389,2.5348721132152474,False,No hay evidencia estadística suficiente para afirmar una diferencia significativa.
+Walk-Forward vs. Buy & Hold,Calmar Ratio,0.6940436906048659,0.324,-10.412345395878484,17.049530168016293,False,No hay evidencia estadística suficiente para afirmar una diferencia significativa.
+Walk-Forward vs. DCA,Total Return,0.4135287890739072,0.123,-0.24628991210827775,1.5618847647821048,False,No hay evidencia estadística suficiente para afirmar una diferencia significativa.
+Walk-Forward vs. DCA,CAGR,0.5695733149425195,0.123,-0.3490298324264968,2.3506010960660357,False,No hay evidencia estadística suficiente para afirmar una diferencia significativa.
+Walk-Forward vs. DCA,Annualized Vol,0.03396825108979307,0.805,-0.05055596807019104,0.11424382314413321,False,No hay evidencia estadística suficiente para afirmar una diferencia significativa.
+Walk-Forward vs. DCA,Max Drawdown,-0.012165908037602646,0.461,-0.13932452029151352,0.14801097435458005,False,No hay evidencia estadística suficiente para afirmar una diferencia significativa.
+Walk-Forward vs. DCA,Sharpe Ratio,0.8679332778579267,0.17,-0.8240846049391495,2.648773426847678,False,No hay evidencia estadística suficiente para afirmar una diferencia significativa.
+Walk-Forward vs. DCA,Sortino Ratio,1.0747393869965582,0.22,-1.4475376033546428,4.011094466597134,False,No hay evidencia estadística suficiente para afirmar una diferencia significativa.
+Walk-Forward vs. DCA,Calmar Ratio,2.2502266005659894,0.212,-4.46187301142643,22.44109850288833,False,No hay evidencia estadística suficiente para afirmar una diferencia significativa.
